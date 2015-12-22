@@ -1,0 +1,15 @@
+<form action="create" name="tic" method="post">
+<table>
+  <% (0..2).each do |r|%>
+      <tr>
+        <% (0..2).each do |c|%>
+            <td>
+              <input type="text" name="<%=r%><%=c%>" value="">
+              </td>
+        <%end%>
+      </tr>
+  <%end%>
+
+  <tr><td><input type="submit" name="submit" value="Done"> </td></tr>
+</table>
+</form>
